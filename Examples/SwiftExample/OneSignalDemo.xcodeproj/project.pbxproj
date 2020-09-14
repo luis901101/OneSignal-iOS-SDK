@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E20C84D1D8787B6004ACDEA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA62EFB1D877EF200E5845A /* UserNotifications.framework */; };
+		88A2A6EFDA1555A893CD9A56 /* libPods-OneSignalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4674335D3DA872E7803B8B8 /* libPods-OneSignalDemo.a */; };
 		9112E8B01E725C1E0022A1CB /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9112E8AF1E725C1E0022A1CB /* NotificationService.swift */; };
 		9112E8B41E725C1E0022A1CB /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9112E8AD1E725C1E0022A1CB /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9150E7691E734F6E00C5D46A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150E7671E734F6E00C5D46A /* GreenViewController.swift */; };
@@ -18,6 +19,7 @@
 		91C3CFDB1E7266F600D9EA80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3CFD31E7266F600D9EA80 /* LaunchScreen.storyboard */; };
 		91C3CFDC1E7266F600D9EA80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91C3CFD51E7266F600D9EA80 /* Main.storyboard */; };
 		91C3CFDE1E7266F600D9EA80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C3CFD81E7266F600D9EA80 /* ViewController.swift */; };
+		C284E4B9AB7495D941E864BE /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4AC3CF3E3409B0951C287B /* libPods-OneSignalNotificationServiceExtension.a */; };
 		DE7880BF24F48427001DB439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7880BE24F48427001DB439 /* UIKit.framework */; };
 		DE7880C424F489C7001DB439 /* OneSignal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7880BA24F4841C001DB439 /* OneSignal.xcframework */; };
 		DE7880C524F489C7001DB439 /* OneSignal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE7880BA24F4841C001DB439 /* OneSignal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -72,6 +74,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E8F18B64346D89862E3606C /* Pods-OneSignalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalDemo.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalDemo/Pods-OneSignalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2C4AC3CF3E3409B0951C287B /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA62EFB1D877EF200E5845A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		9112E8AD1E725C1E0022A1CB /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9112E8AF1E725C1E0022A1CB /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -87,8 +91,12 @@
 		91C3CFD71E7266F600D9EA80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91C3CFD81E7266F600D9EA80 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91E4D50D1C7521DE00025BA8 /* OneSignalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSignalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7BFCDBC560E9B9161826BB5 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C4674335D3DA872E7803B8B8 /* libPods-OneSignalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D42550CEFF45AF33C8CEBC /* Pods-OneSignalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalDemo.release.xcconfig"; path = "Target Support Files/Pods-OneSignalDemo/Pods-OneSignalDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DE7880BA24F4841C001DB439 /* OneSignal.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OneSignal.xcframework; path = ../../iOS_SDK/OneSignalSDK/OneSignal_XCFramework/OneSignal.xcframework; sourceTree = "<group>"; };
 		DE7880BE24F48427001DB439 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E3AE1775EF300BE57B8B5F88 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7880C724F489CC001DB439 /* OneSignal.xcframework in Frameworks */,
+				C284E4B9AB7495D941E864BE /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +117,25 @@
 				9150E76D1E73556A00C5D46A /* CoreLocation.framework in Frameworks */,
 				DE7880BF24F48427001DB439 /* UIKit.framework in Frameworks */,
 				3E20C84D1D8787B6004ACDEA /* UserNotifications.framework in Frameworks */,
+				88A2A6EFDA1555A893CD9A56 /* libPods-OneSignalDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36A4C522BB10591E50D2F175 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E8F18B64346D89862E3606C /* Pods-OneSignalDemo.debug.xcconfig */,
+				C4D42550CEFF45AF33C8CEBC /* Pods-OneSignalDemo.release.xcconfig */,
+				A7BFCDBC560E9B9161826BB5 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				E3AE1775EF300BE57B8B5F88 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3EA62EFA1D877EF200E5845A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +143,8 @@
 				DE7880BA24F4841C001DB439 /* OneSignal.xcframework */,
 				9150E76C1E73556A00C5D46A /* CoreLocation.framework */,
 				3EA62EFB1D877EF200E5845A /* UserNotifications.framework */,
+				C4674335D3DA872E7803B8B8 /* libPods-OneSignalDemo.a */,
+				2C4AC3CF3E3409B0951C287B /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -157,6 +181,7 @@
 				9112E8AE1E725C1E0022A1CB /* OneSignalNotificationServiceExtension */,
 				3EA62EFA1D877EF200E5845A /* Frameworks */,
 				91E4D50E1C7521DE00025BA8 /* Products */,
+				36A4C522BB10591E50D2F175 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +201,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9112E8B51E725C1E0022A1CB /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
+				75E6F588BC47D097F41C5850 /* [CP] Check Pods Manifest.lock */,
 				9112E8A91E725C1E0022A1CB /* Sources */,
 				9112E8AA1E725C1E0022A1CB /* Frameworks */,
 				9112E8AB1E725C1E0022A1CB /* Resources */,
@@ -194,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91E4D51F1C7521DE00025BA8 /* Build configuration list for PBXNativeTarget "OneSignalDemo" */;
 			buildPhases = (
+				B4740694651CEF4E72B50D60 /* [CP] Check Pods Manifest.lock */,
 				91E4D5091C7521DE00025BA8 /* Sources */,
 				91E4D50A1C7521DE00025BA8 /* Frameworks */,
 				91E4D50B1C7521DE00025BA8 /* Resources */,
@@ -279,6 +306,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75E6F588BC47D097F41C5850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4740694651CEF4E72B50D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9112E8A91E725C1E0022A1CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -331,6 +405,7 @@
 /* Begin XCBuildConfiguration section */
 		9112E8B61E725C1E0022A1CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BFCDBC560E9B9161826BB5 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -354,6 +429,7 @@
 		};
 		9112E8B71E725C1E0022A1CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3AE1775EF300BE57B8B5F88 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -485,6 +561,7 @@
 		};
 		91E4D5201C7521DE00025BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8F18B64346D89862E3606C /* Pods-OneSignalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OneSignalDemo/OneSignalDemo.entitlements;
@@ -503,6 +580,7 @@
 		};
 		91E4D5211C7521DE00025BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4D42550CEFF45AF33C8CEBC /* Pods-OneSignalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = OneSignalDemo/OneSignalDemo.entitlements;

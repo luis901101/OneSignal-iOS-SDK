@@ -4,7 +4,7 @@ target 'OneSignalDemo' do
   pod 'OneSignal', :path => '~/Documents/GitHub/OneSignal-iOS-SDK'
 end
 
-target 'NotificationServiceExtension' do
+target 'OneSignalNotificationServiceExtension' do
   pod 'OneSignal', :path => '~/Documents/GitHub/OneSignal-iOS-SDK'
 end
 
