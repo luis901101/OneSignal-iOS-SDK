@@ -43,18 +43,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
         // For debugging
         OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
         
-        let notificationWillShowInForegroundBlock: OSNotificationWillShowInForegroundBlock = { notificationJob in
+        let notificationWillShowInForegroundBlock: OSNotificationWillShowInForegroundBlock = { notification, completion  in
             
-            guard let notificationJob = notificationJob else {
+            guard let notification = notification, let completion = completion else {
                 return
             }
-            print("Received Notification: ", notificationJob.notificationId ?? "nil id")
+            print("Received Notification: ", notification.notificationId ?? "nil id")
             
-            if notificationJob.notificationId == "silent notification" {
-                notificationJob.displayType = OSNotificationDisplayType.silent
+            if notification.notificationId == "silent notification" {
+                completion(OSNotificationDisplayType.silent)
             }
             
-            notificationJob.complete()
+            completion(OSNotificationDisplayType.notification)
         }
         
         let notificationOpenedBlock: OSNotificationOpenedBlock = { result in
@@ -102,9 +102,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
         let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: true, ]
         
         OneSignal.setAppId("3beb3078-e0f1-4629-af17-fde833b9f716")
-        OneSignal.setLaunchOptions(launchOptions)
+        OneSignal.initWithLaunchOptions(launchOptions)
         OneSignal.setAppSettings(onesignalInitSettings)
-        OneSignal.notificationDisplayType = OSNotificationDisplayType.notification
         OneSignal.setNotificationOpenedHandler(notificationOpenedBlock)
         OneSignal.setNotificationWillShowInForegroundHandler(notificationWillShowInForegroundBlock)
         
@@ -120,10 +119,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
     func onOSPermissionChanged(_ stateChanges: OSPermissionStateChanges) {
         
         // Example of detecting answering the permission prompt
-        if stateChanges.from.status == OSNotificationPermission.notDetermined {
-            if stateChanges.to.status == OSNotificationPermission.authorized {
+        if stateChanges.from?.status == OSNotificationPermission.notDetermined {
+            if stateChanges.to?.status == OSNotificationPermission.authorized {
                 print("Thanks for accepting notifications!")
-            } else if stateChanges.to.status == OSNotificationPermission.denied {
+            } else if stateChanges.to?.status == OSNotificationPermission.denied {
                 print("Notifications not accepted. You can turn them on later under your iOS settings.")
             }
         }
@@ -144,7 +143,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
     // TODO: update docs to change method name
     // Add this new method
     func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges) {
-        if !stateChanges.from.subscribed && stateChanges.to.subscribed {
+        if !stateChanges.from!.subscribed && stateChanges.to!.subscribed {
             print("Subscribed for OneSignal push notifications!")
         }
         print("SubscriptionStateChange: ", stateChanges)

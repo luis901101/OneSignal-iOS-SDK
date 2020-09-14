@@ -101,26 +101,26 @@ class ViewController: UIViewController, OSPermissionObserver, OSSubscriptionObse
     }
     
     func onOSPermissionChanged(_ stateChanges: OSPermissionStateChanges) {
-        if stateChanges.from.status == OSNotificationPermission.notDetermined {
-            if stateChanges.to.status == OSNotificationPermission.authorized {
+        if stateChanges.from?.status == OSNotificationPermission.notDetermined {
+            if stateChanges.to?.status == OSNotificationPermission.authorized {
                 registerForPushNotificationsButton.backgroundColor = UIColor.green
                 registerForPushNotificationsButton.isUserInteractionEnabled = false
                 allowNotificationsSwitch.isUserInteractionEnabled = true
-            } else if stateChanges.to.status == OSNotificationPermission.denied {
+            } else if stateChanges.to?.status == OSNotificationPermission.denied {
                 displaySettingsNotification()
             }
-        } else if stateChanges.to.status == OSNotificationPermission.denied { // DENIED = NOT SUBSCRIBED
+        } else if stateChanges.to?.status == OSNotificationPermission.denied { // DENIED = NOT SUBSCRIBED
             registerForPushNotificationsButton.isUserInteractionEnabled = true
             allowNotificationsSwitch.isUserInteractionEnabled = false
         }
     }
     
     func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges) {
-        if stateChanges.from.subscribed && !stateChanges.to.subscribed { // NOT SUBSCRIBED != DENIED
+        if stateChanges.from!.subscribed && !stateChanges.to!.subscribed { // NOT SUBSCRIBED != DENIED
             allowNotificationsSwitch.isOn = false
             setSubscriptionLabel.text = "Set Subscription OFF"
             registerForPushNotificationsButton.backgroundColor = UIColor.red
-        } else if !stateChanges.from.subscribed && stateChanges.to.subscribed {
+        } else if !stateChanges.from!.subscribed && stateChanges.to!.subscribed {
             allowNotificationsSwitch.isOn = true
             allowNotificationsSwitch.isUserInteractionEnabled = true
             setSubscriptionLabel.text = "Set Subscription ON"
@@ -233,7 +233,7 @@ class ViewController: UIViewController, OSPermissionObserver, OSSubscriptionObse
          */
         // must add core location framework for this to work. Root Project > Build Phases > Link Binary With Libraries
         OneSignal.promptLocation()
-        print("OneSignal version: " + OneSignal.sdk_semantic_version());
+        print("OneSignal version: " + OneSignal.sdkSemanticVersion());
     }
     
     // Sending Notifications
