@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,10 +20,6 @@
 		CA60C744200049AF004A338B /* GreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA60C743200049AF004A338B /* GreenViewController.m */; };
 		CAD30B7F203F906C00C7AF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAD30B7E203F906C00C7AF55 /* Assets.xcassets */; };
 		CAD30B8E203FB5B000C7AF55 /* onesignal1024.png in Resources */ = {isa = PBXBuildFile; fileRef = CAD30B8D203FB5B000C7AF55 /* onesignal1024.png */; };
-		DE69F53D24F47BDD0050A5D5 /* OneSignal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */; };
-		DE69F53E24F47BDD0050A5D5 /* OneSignal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		DE69F57324F481EE0050A5D5 /* OneSignal.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */; };
-		DE69F57424F481EE0050A5D5 /* OneSignal.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DE7880B924F4829A001DB439 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7880B824F4829A001DB439 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,28 +43,6 @@
 				916B37181E6F520E00CEE4AA /* NotificationServiceExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE69F53F24F47BDD0050A5D5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DE69F53E24F47BDD0050A5D5 /* OneSignal.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DE69F57524F481EE0050A5D5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DE69F57424F481EE0050A5D5 /* OneSignal.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -97,7 +71,6 @@
 		CAD30B7E203F906C00C7AF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAD30B8D203FB5B000C7AF55 /* onesignal1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = onesignal1024.png; path = Assets.xcassets/AppIcon.appiconset/onesignal1024.png; sourceTree = "<group>"; };
 		DE4BCB63161638D4003F4A66 /* OneSignalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneSignalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OneSignal.xcframework; path = ../../iOS_SDK/OneSignalSDK/OneSignal_XCFramework/OneSignal.xcframework; sourceTree = "<group>"; };
 		DE7880B824F4829A001DB439 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE69F57324F481EE0050A5D5 /* OneSignal.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE69F53D24F47BDD0050A5D5 /* OneSignal.xcframework in Frameworks */,
 				DE7880B924F4829A001DB439 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				DE7880B824F4829A001DB439 /* UIKit.framework */,
-				DE69F53C24F47BDD0050A5D5 /* OneSignal.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,7 +165,6 @@
 				916B370C1E6F520D00CEE4AA /* Sources */,
 				916B370D1E6F520D00CEE4AA /* Frameworks */,
 				916B370E1E6F520D00CEE4AA /* Resources */,
-				DE69F57524F481EE0050A5D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -214,7 +183,6 @@
 				DE4BCB60161638D4003F4A66 /* Frameworks */,
 				DE4BCB61161638D4003F4A66 /* Resources */,
 				3EA62ECB1D877A5A00E5845A /* Embed App Extensions */,
-				DE69F53F24F47BDD0050A5D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,9 +206,11 @@
 				TargetAttributes = {
 					916B370F1E6F520D00CEE4AA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 99SW8E36CT;
 						ProvisioningStyle = Automatic;
 					};
 					DE4BCB62161638D4003F4A66 = {
+						DevelopmentTeam = 99SW8E36CT;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -366,11 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.example.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -399,11 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.example.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,10 +460,7 @@
 				GCC_PREFIX_HEADER = "OneSignalDemo/OneSignalDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OneSignalDemo/OneSignalDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.example;
 				PRODUCT_NAME = OneSignalDemo;
@@ -523,10 +482,7 @@
 				GCC_PREFIX_HEADER = "OneSignalDemo/OneSignalDemo-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/OneSignalDemo/OneSignalDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesignal.example;
 				PRODUCT_NAME = OneSignalDemo;
