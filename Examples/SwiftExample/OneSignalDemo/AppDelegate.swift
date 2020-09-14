@@ -119,10 +119,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
     func onOSPermissionChanged(_ stateChanges: OSPermissionStateChanges) {
         
         // Example of detecting answering the permission prompt
-        if stateChanges.from?.status == OSNotificationPermission.notDetermined {
-            if stateChanges.to?.status == OSNotificationPermission.authorized {
+        if stateChanges.from.status == OSNotificationPermission.notDetermined {
+            if stateChanges.to.status == OSNotificationPermission.authorized {
                 print("Thanks for accepting notifications!")
-            } else if stateChanges.to?.status == OSNotificationPermission.denied {
+            } else if stateChanges.to.status == OSNotificationPermission.denied {
                 print("Notifications not accepted. You can turn them on later under your iOS settings.")
             }
         }
@@ -143,7 +143,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, OSPermissionObserver, OSS
     // TODO: update docs to change method name
     // Add this new method
     func onOSSubscriptionChanged(_ stateChanges: OSSubscriptionStateChanges) {
-        if !stateChanges.from!.subscribed && stateChanges.to!.subscribed {
+        if !stateChanges.from.subscribed && stateChanges.to.subscribed {
             print("Subscribed for OneSignal push notifications!")
         }
         print("SubscriptionStateChange: ", stateChanges)
